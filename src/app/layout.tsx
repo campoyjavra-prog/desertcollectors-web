@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Desert Collectors | Cartas Pokémon TCG Premium",
   description:
     "Tu tienda de confianza para cartas Pokémon TCG. Cartas sueltas, cajas selladas y accesorios premium para coleccionistas.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

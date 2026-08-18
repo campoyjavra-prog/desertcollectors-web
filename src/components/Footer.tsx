@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerSections = [
   {
@@ -159,13 +160,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="group inline-flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-desert-amber to-desert-gold shadow-lg shadow-desert-amber/20">
-                <span className="text-sm font-bold text-desert-black">DC</span>
-              </div>
-              <span className="text-lg font-bold tracking-tight text-desert-sand-light">
-                Desert Collectors
-              </span>
+            <Link href="/" className="group inline-flex items-center">
+              <Image
+                src="/header.png"
+                alt="Desert Collectors Logo"
+                width={320}
+                height={90}
+                className="h-12 w-auto object-contain transition-opacity duration-300 group-hover:opacity-80"
+              />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-desert-sand/50">
               Tu tienda de confianza para cartas Pokémon TCG. Coleccionismo
